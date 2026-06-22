@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fbfaf6;
+  color: #252525;
+  padding-top: 70px;
+}
+
+.navbar-brand {
+  color: #365f4b;
+}
+
+.game-hero {
+  background: linear-gradient(135deg, #eef8ee, #fbfaf6);
+  padding: 90px 20px 70px 20px;
+}
+
+.game-tag {
+  display: inline-block;
+  background-color: #dff5e3;
+  color: #315c46;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.section-space {
+  padding: 65px 0;
+}
+
+.panel-card,
+.game-card,
+.score-card,
+.note-card {
+  background-color: white;
+  border: 1px solid #e6ded6;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.garden-button {
+  background-color: #365f4b;
+  border-color: #365f4b;
+  color: white;
+}
+
+.garden-button:hover {
+  background-color: #294b39;
+  border-color: #294b39;
+  color: white;
+}
+
+.light-button {
+  border: 1px solid #365f4b;
+  color: #365f4b;
+  background-color: white;
+}
+
+.light-button:hover {
+  background-color: #365f4b;
+  color: white;
+}
+
+.tile-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.memory-tile {
+  min-height: 95px;
+  border: 2px solid #d8cfc6;
+  border-radius: 18px;
+  background-color: #f7f2ed;
+  font-size: 34px;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.memory-tile:hover {
+  transform: translateY(-3px);
+}
+
+.memory-tile.active {
+  background-color: #dff5e3;
+  border-color: #365f4b;
+  transform: scale(1.04);
+}
+
+.memory-tile:disabled {
+  opacity: 0.75;
+}
+
+.small-note {
+  color: #6c6460;
+  font-size: 15px;
+}
+
+.result-good {
+  background-color: #e5f6e8;
+  border-left: 5px solid #365f4b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.result-warn {
+  background-color: #fff0e8;
+  border-left: 5px solid #b66b40;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 25px 0;
+}
+
+@media (max-width: 768px) {
+  .tile-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .memory-tile {
+    min-height: 80px;
+  }
+}
