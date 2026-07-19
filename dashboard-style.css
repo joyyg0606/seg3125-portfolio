@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #233332;
+  background-color: #f7f4ed;
+  padding-top: 70px;
+}
+
+/* Top navigation and introduction */
+.food-topbar .navbar-brand {
+  color: #245c5a;
+}
+
+.food-view-intro {
+  background: linear-gradient(135deg, #e4f1ee, #fff8e8);
+  padding: 85px 20px 65px 20px;
+}
+
+.food-view-tag {
+  display: inline-block;
+  background-color: #d5ebe6;
+  color: #245c5a;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.food-intro-text,
+.joy-index-note {
+  max-width: 760px;
+}
+
+.food-section-space {
+  padding: 65px 0;
+}
+
+/* Summary information above the charts */
+.price-summary-box,
+.veg-chart-panel,
+.food-data-box,
+.food-howto-box {
+  background-color: white;
+  border: 1px solid #dce5e1;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.price-summary-box {
+  height: 100%;
+}
+
+.price-summary-label {
+  color: #657371;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.price-summary-value {
+  color: #245c5a;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* The two main dashboard charts */
+.food-chart-space {
+  position: relative;
+  min-height: 420px;
+}
+
+.chart-help {
+  color: #62706e;
+  min-height: 48px;
+}
+
+.chart-problem {
+  background-color: #fff1e5;
+  border-left: 5px solid #d98f4e;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.food-language-choice {
+  min-width: 150px;
+}
+
+.form-select:focus {
+  border-color: #245c5a;
+  box-shadow: 0 0 0 0.2rem rgba(36, 92, 90, 0.16);
+}
+
+/* Data source note and exact values table */
+.joy-index-note {
+  background-color: #fff3d8;
+  border-left: 5px solid #d98f4e;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.joy-index-note a {
+  color: #245c5a;
+  font-weight: bold;
+}
+
+.veg-index-table th {
+  background-color: #245c5a;
+  color: white;
+  vertical-align: middle;
+}
+
+.veg-index-table td {
+  vertical-align: middle;
+}
+
+.veg-index-table tbody tr:nth-child(even) {
+  background-color: #f4f8f7;
+}
+
+.food-view-footer {
+  background-color: #233332;
+  color: white;
+  padding: 25px 0;
+}
+
+@media (max-width: 992px) {
+  .chart-help {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-view-intro {
+    padding: 65px 18px 50px 18px;
+  }
+
+  .food-section-space {
+    padding: 48px 0;
+  }
+
+  .food-chart-space {
+    min-height: 360px;
+  }
+
+  .food-language-choice {
+    min-width: 125px;
+  }
+}

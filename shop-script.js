@@ -1,3 +1,4 @@
+// Cozy Desk uses a small local product list so the filters and checkout can be tested without a database.
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const products = [
@@ -28,6 +29,7 @@ function CozyDeskApp() {
   const [surveyComment, setSurveyComment] = React.useState("");
   const [surveyMessage, setSurveyMessage] = React.useState("");
 
+  // Every selected facet must match before a product stays visible.
   const filteredProducts = products.filter(item => {
     const matchCategory = category === "All" || item.category === category;
     const matchColor = color === "All" || item.color === color;
@@ -83,6 +85,7 @@ function CozyDeskApp() {
     setOrderMessage("");
   }
 
+  // This only finishes the prototype flow. It never sends real card information.
   function finishOrder(event) {
     event.preventDefault();
     if (cardName.trim() === "" || cardNumber.trim().length < 4) {

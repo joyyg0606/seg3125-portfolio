@@ -1,3 +1,4 @@
+// Bloom & Brush is a front-end prototype, so the services and appointment times are stored here.
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const services = [
@@ -18,6 +19,7 @@ function BloomBrushApp() {
 
   const selected = services.find(item => item[0] === service) || services[1];
 
+  // The form confirms the request on screen instead of sending it to a real salon system.
   function sendBooking(event) {
     event.preventDefault();
 

@@ -1,3 +1,4 @@
+// Pattern Garden keeps the board rules the same while the player changes themes and levels.
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const gardenThemes = {
@@ -48,6 +49,7 @@ function PatternGardenPage() {
     showGardenPattern(firstRoundPattern);
   }
 
+  // Show one tile at a time before letting the player click the board.
   function showGardenPattern(pattern) {
     setPlayState("watching");
     setLitTile(null);

@@ -10,189 +10,216 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top joy-main-nav">
+  <!-- Main portfolio navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top joy-portfolio-nav">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Joy Yeung</a>
+      <a class="navbar-brand fw-bold" href="#joyHome">Joy Yeung</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
-        aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#joyPortfolioMenu"
+        aria-controls="joyPortfolioMenu" aria-expanded="false" aria-label="Toggle portfolio navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="mainMenu">
+      <div class="collapse navbar-collapse" id="joyPortfolioMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#aboutMe">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#myProcess">How I Work</a></li>
-          <li class="nav-item"><a class="nav-link" href="#semesterWork">Case Studies</a></li>
-          <li class="nav-item"><a class="nav-link" href="#serviceNotes">A4 Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#joyAbout">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#joyProcess">How I Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#joyProjects">Course Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#joyReflection">Reflection</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="hero-section joy-portfolio-hero">
-    <div class="container text-center">
-      <p class="text-muted mb-2">SEG3125 portfolio entry page</p>
-      <h1 class="display-4 fw-bold">My UI Design Portfolio</h1>
-      <p class="lead mt-3">
-        I use this page to keep my course projects together and show how my design work changes through the semester.
-      </p>
-      <a href="#semesterWork" class="btn btn-primary mt-3">View My Projects</a>
+  <!-- Final version of the portfolio introduction -->
+  <header id="joyHome" class="joy-portfolio-intro">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="joy-kicker">SEG3125 UI Design Portfolio</p>
+          <h1 class="display-3 fw-bold">My four interface design projects.</h1>
+          <p class="lead mt-3">
+            I started the semester with a basic portfolio page. These projects show how I added user goals,
+            feedback, filtering, checkout steps, charts, and localization as the course continued.
+          </p>
+          <a href="#joyProjects" class="btn joy-main-button mt-3">View My Projects</a>
+        </div>
+
+        <div class="col-lg-5 text-center">
+          <div class="joy-profile-box">
+            <div class="joy-initials-circle">JY</div>
+            <h2 class="h4 fw-bold mt-4">Joy Yeung</h2>
+            <p class="mb-1">Software Engineering Student</p>
+            <p class="joy-small-text mb-0">University of Ottawa</p>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <section id="aboutMe" class="section-padding joy-about-block">
+  <section id="joyAbout" class="joy-section-space bg-white">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-5 text-center mb-4 mb-md-0">
-          <div class="profile-circle joy-initials-mark">JY</div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <p class="joy-section-kicker">About Me</p>
+          <h2 class="fw-bold">Learning UI design by building each assignment</h2>
         </div>
-
-        <div class="col-md-7">
-          <h2 class="fw-bold">About Me</h2>
+        <div class="col-lg-7">
           <p>
             Hi, my name is Joy Yeung. I am a Software Engineering student at the University of Ottawa.
-            I am still learning UI and UX design, so this portfolio is also a record of my progress.
-          </p>
-          <p>
-            For this course, I am trying to focus on making pages that are clear first. I care about spacing,
-            readable text, simple navigation, and making sure the user can understand what to do next.
+            Before SEG3125, I usually thought more about whether my code worked than how the interface felt to use.
           </p>
           <p class="mb-0">
-            My Assignment 2 project is a hair studio website called Bloom & Brush. I chose it because appointment
-            booking and service browsing are both easy user goals to test in a prototype.
+            During the course, I focused on readable layouts, clear feedback, simple navigation, and matching each
+            page to a real user goal. The projects below let me practise a different type of interaction each time.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="myProcess" class="section-padding bg-light joy-process-notes">
+  <section id="joyProcess" class="joy-section-space joy-process-background">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4">How I Work</h2>
+      <p class="joy-section-kicker text-center">How I Work</p>
+      <h2 class="fw-bold text-center mb-5">The process I followed for the course</h2>
 
       <div class="row g-4">
-        <div class="col-md-4">
-          <div class="info-card joy-note-card h-100">
-            <h4>Start With the User</h4>
-            <p>
-              I try to write down what the user is trying to do before choosing colours or layout.
-              For Assignment 2, the two main goals were booking an appointment and comparing services.
-            </p>
+        <div class="col-md-6 col-xl-3">
+          <div class="joy-work-step h-100">
+            <span class="joy-step-number">01</span>
+            <h3 class="h5 fw-bold">Write the User Goal</h3>
+            <p class="mb-0">I first write down what the user should be able to finish and what information they need.</p>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="info-card joy-note-card h-100">
-            <h4>Make a Rough Version</h4>
-            <p>
-              I use simple mockups first because it is easier to change the flow before spending time on the
-              final page. This helped me separate the booking flow from the service browsing flow.
-            </p>
+        <div class="col-md-6 col-xl-3">
+          <div class="joy-work-step h-100">
+            <span class="joy-step-number">02</span>
+            <h3 class="h5 fw-bold">Plan the Main Flow</h3>
+            <p class="mb-0">I split the task into smaller steps and decide which controls and feedback should be visible.</p>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="info-card joy-note-card h-100">
-            <h4>Check What Feels Confusing</h4>
-            <p>
-              After the first version, I look for places where the user might hesitate, like unclear buttons,
-              missing prices, or too many choices on one screen.
-            </p>
+        <div class="col-md-6 col-xl-3">
+          <div class="joy-work-step h-100">
+            <span class="joy-step-number">03</span>
+            <h3 class="h5 fw-bold">Build a Working Version</h3>
+            <p class="mb-0">I create the prototype with React, Bootstrap, CSS, and straightforward JavaScript.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="joy-work-step h-100">
+            <span class="joy-step-number">04</span>
+            <h3 class="h5 fw-bold">Test What Feels Unclear</h3>
+            <p class="mb-0">I check labels, feedback, spacing, and the places where a user might hesitate or make a mistake.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="semesterWork" class="section-padding joy-course-work">
+  <!-- Each preview is based on the actual visual style of that prototype. -->
+  <section id="joyProjects" class="joy-section-space bg-white">
     <div class="container">
-      <h2 class="fw-bold text-center mb-2">Case Studies</h2>
-      <p class="text-center text-muted mb-5">
-        These are the course projects for SEG3125. The first completed project links to my service business prototype.
-      </p>
+      <p class="joy-section-kicker text-center">Case Studies</p>
+      <h2 class="fw-bold text-center mb-2">SEG3125 semester projects</h2>
+      <p class="text-center joy-small-text mb-5">Each card opens the interactive site that I made for that assignment.</p>
 
       <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card project-card joy-service-project h-100" data-project-status="completed" data-user-goal="book-salon-appointment">
-            <div class="project-image service-img" aria-hidden="true"></div>
-            <div class="card-body">
-              <p class="small text-muted mb-1">Assignment 2</p>
-              <h5 class="card-title">Bloom & Brush</h5>
-              <p class="card-text">
-                A hair studio website where users can compare services, choose a stylist, and request an appointment.
-              </p>
-              <a href="service-site.html" class="btn btn-outline-primary">Open Service Site</a>
+        <div class="col-md-6 col-xl-3">
+          <article class="joy-project-tile h-100">
+            <div class="joy-project-preview bloom-preview" aria-hidden="true">
+              <div class="bloom-scissors">✂</div>
+              <div class="bloom-lines"><span></span><span></span><span></span></div>
             </div>
-          </div>
+            <div class="joy-project-info">
+              <p class="joy-project-number">Assignment 2</p>
+              <h3 class="h5 fw-bold">Bloom & Brush</h3>
+              <p>A hair studio site for comparing services and requesting an appointment.</p>
+              <a href="service-site.html" class="btn joy-project-link">Open Service Site</a>
+            </div>
+          </article>
         </div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="card project-card joy-future-project h-100" data-project-status="not-started">
-            <div class="project-image game-img" aria-hidden="true"></div>
-            <div class="card-body">
-              <p class="small text-muted mb-1">Assignment 3</p>
-              <h5 class="card-title">Pattern Garden</h5>
-              <p class="card-text">
-                A small memory game where users watch a pattern and repeat it back by clicking the tiles.
-              </p>
-              <a href="memory-game.html" class="btn btn-outline-primary">Open Memory Game</a>
+        <div class="col-md-6 col-xl-3">
+          <article class="joy-project-tile h-100">
+            <div class="joy-project-preview garden-preview" aria-hidden="true">
+              <div class="garden-mini-tile">🌿</div><div class="garden-mini-tile">🌸</div><div class="garden-mini-tile">🍄</div>
+              <div class="garden-mini-tile">🌙</div><div class="garden-mini-tile garden-lit-tile">⭐</div><div class="garden-mini-tile">☀️</div>
             </div>
-          </div>
+            <div class="joy-project-info">
+              <p class="joy-project-number">Assignment 3</p>
+              <h3 class="h5 fw-bold">Pattern Garden</h3>
+              <p>A memory game with three levels, tile themes, progress, and mistake feedback.</p>
+              <a href="memory-game.html" class="btn joy-project-link">Open Memory Game</a>
+            </div>
+          </article>
         </div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="card project-card joy-shop-project h-100" data-project-status="completed" data-user-goal="buy-stationery-item">
-            <div class="project-image shop-img" aria-hidden="true"></div>
-            <div class="card-body">
-              <p class="small text-muted mb-1">Assignment 4</p>
-              <h5 class="card-title">Cozy Desk</h5>
-              <p class="card-text">
-                A small stationery shop where users can filter products, add items to a cart, checkout, and leave feedback.
-              </p>
-              <a href="shop-site.html" class="btn btn-outline-primary">Open Shop Site</a>
+        <div class="col-md-6 col-xl-3">
+          <article class="joy-project-tile h-100">
+            <div class="joy-project-preview cozy-preview" aria-hidden="true">
+              <div class="cozy-shop-item">📓</div><div class="cozy-shop-item">🖊️</div><div class="cozy-shop-item">🗓️</div>
+              <div class="cozy-cart-line"></div>
             </div>
-          </div>
+            <div class="joy-project-info">
+              <p class="joy-project-number">Assignment 4</p>
+              <h3 class="h5 fw-bold">Cozy Desk</h3>
+              <p>A stationery store with product filters, a cart, checkout steps, and a survey.</p>
+              <a href="shop-site.html" class="btn joy-project-link">Open Shop Site</a>
+            </div>
+          </article>
         </div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="card project-card joy-future-project h-100" data-project-status="not-started">
-            <div class="project-image data-img" aria-hidden="true"></div>
-            <div class="card-body">
-              <p class="small text-muted mb-1">Later project</p>
-              <h5 class="card-title">Analytics Site</h5>
-              <p class="card-text">
-                Placeholder for a dashboard or data visualization project planned for later in the course.
-              </p>
-              <a href="#" class="btn btn-outline-primary disabled" aria-disabled="true">Not Added Yet</a>
+        <div class="col-md-6 col-xl-3">
+          <article class="joy-project-tile h-100">
+            <div class="joy-project-preview food-preview" aria-hidden="true">
+              <div class="food-preview-bar food-bar-one"></div>
+              <div class="food-preview-bar food-bar-two"></div>
+              <div class="food-preview-bar food-bar-three"></div>
+              <div class="food-preview-bar food-bar-four"></div>
+              <div class="food-line-dot food-dot-one"></div>
+              <div class="food-line-dot food-dot-two"></div>
+              <div class="food-line-dot food-dot-three"></div>
             </div>
-          </div>
+            <div class="joy-project-info">
+              <p class="joy-project-number">Assignment 5</p>
+              <h3 class="h5 fw-bold">Food Price View</h3>
+              <p>A bilingual dashboard for comparing Canadian vegetable price index data.</p>
+              <a href="dashboard-site.html" class="btn joy-project-link">Open Dashboard</a>
+            </div>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="serviceNotes" class="section-padding bg-light joy-a2-details">
+  <section id="joyReflection" class="joy-section-space joy-reflection-background">
     <div class="container">
-      <div class="row align-items-start">
+      <div class="row g-5 align-items-center">
         <div class="col-lg-7">
-          <h2 class="fw-bold">Assignment 4 Notes</h2>
+          <p class="joy-section-kicker">Final Reflection</p>
+          <h2 class="fw-bold">What changed from the first assignment</h2>
           <p>
-            For the e-commerce site, I focused on three required user processes: exploring products with filters, buying through clear checkout steps, and leaving a short survey.
+            My first portfolio focused mostly on basic layout and appearance. Later assignments made me think
+            more about user goals, system feedback, cognition, verbal communication, usability, and localization.
           </p>
-          <p class="mb-lg-0">
-            The final prototype lets users browse stationery items, narrow choices with facets, add items to a cart, fill in checkout information, and share feedback without leaving the site.
+          <p class="mb-0">
+            The last dashboard brought several ideas together. It needed clear charts, useful controls, bilingual
+            wording, localized numbers, and enough explanation for the user to understand the data.
           </p>
         </div>
 
-        <div class="col-lg-5 mt-4 mt-lg-0">
-          <div class="info-card joy-check-card">
-            <h4>Prototype checks</h4>
+        <div class="col-lg-5">
+          <div class="joy-final-list">
+            <h3 class="h5 fw-bold">Final portfolio includes</h3>
             <ul class="mb-0">
-              <li>The shop name and product purpose are shown.</li>
-              <li>Users can filter items by category, colour, use, and price.</li>
-              <li>The e-commerce site links from this portfolio.</li>
-              <li>The checkout and survey are interactive.</li>
+              <li>Four working interactive projects</li>
+              <li>Project previews that match each site</li>
+              <li>Responsive layouts for smaller screens</li>
+              <li>Clear navigation back to the portfolio</li>
+              <li>An English and French dashboard</li>
             </ul>
           </div>
         </div>
@@ -200,9 +227,9 @@
     </div>
   </section>
 
-  <footer class="footer text-center joy-footer">
+  <footer class="joy-portfolio-footer text-center">
     <div class="container">
-      <p class="mb-1">SEG3125 Portfolio</p>
+      <p class="mb-1">SEG3125 UI Design Portfolio</p>
       <p class="mb-0 small">Designed and maintained by Joy Yeung</p>
     </div>
   </footer>
