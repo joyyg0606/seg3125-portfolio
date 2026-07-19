@@ -1,4 +1,4 @@
-SEG3125 Assignment 5 - Final Practice Package
+SEG3125 Assignment 5
 
 Main Assignment 5 files
 - index.html: revised final portfolio with links to all four projects
